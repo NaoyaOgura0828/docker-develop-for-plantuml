@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  plantuml:
+    image: ${IMAGE_NAME}
+    container_name: ${CONTAINER_NAME}
+    build:
+      context: ./plantuml
+      dockerfile: Dockerfile
+      args:
+        - BASE_IMAGE_TAG=${BASE_IMAGE_TAG}
+        - USER_NAME=${USER_NAME}
+        - JAVA_VERSION=${JAVA_VERSION}
+    volumes:
+      - home:/home
+    stdin_open: true
+    tty: true
+
+volumes:
+  home:
+    name: ${VOLUME_NAME}
+
+networks:
+  default:
+    name: ${NETWORK_NAME}
