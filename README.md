@@ -11,8 +11,8 @@
 <br>
 
 # Installation
-git cloneコマンドで本Repositoryを任意のディレクトリ配下にcloneする。
-VScode拡張機能である、[PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)をコンテナ環境へInstallする。
+- git cloneコマンドで本Repositoryを任意のディレクトリ配下にcloneする。
+- VScode拡張機能である、[PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)をコンテナ環境へInstallする。
 
 <br>
 
